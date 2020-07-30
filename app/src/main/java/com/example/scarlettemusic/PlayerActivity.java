@@ -144,6 +144,25 @@ public class PlayerActivity extends AppCompatActivity {
                 play.setImageResource(R.drawable.play);
             }
         });
+        
+        
+        // if you want the the mediaplayer to go to next song after its finished playing one song its optional 
+        /*mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                play.setImageResource(R.drawable.play);
+
+                int currentPosition = position;
+                if (currentPosition < musicList.size() -1) {
+                    currentPosition++;
+                } else {
+                    currentPosition = 0;
+                }
+                initializeMusicPlayer(currentPosition);
+
+            }
+        });*/
+
 
         // working on seekbar
 
